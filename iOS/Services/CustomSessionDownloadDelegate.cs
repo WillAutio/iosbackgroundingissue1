@@ -70,9 +70,15 @@ namespace FormsBackgrounding.iOS
 			if (fileManager.FileExists (targetFileName)) {
 				fileManager.Remove (targetFileName, out error);
 			}
-			bool success = fileManager.Copy (location.Path, targetFileName, out error);
-			if (!success) {
-				Console.WriteLine ("Error during the copy: {0}", error.LocalizedDescription);
+
+
+			Console.WriteLine("location.Path : {0}", location.Path);
+			Console.WriteLine("targetFileName: {0}", targetFileName);
+
+			bool success = fileManager.Copy(location.Path, targetFileName, out error);
+			if (!success)
+			{
+				Console.WriteLine("Error during the copy: {0}", error.LocalizedDescription);
 			}
 		}
 

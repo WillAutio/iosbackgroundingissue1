@@ -31,7 +31,8 @@ namespace FormsBackgrounding
 		{
 			this.catImage.Source = null;
 			var message = new DownloadMessage {
-				Url = "http://xamarinuniversity.blob.core.windows.net/ios210/huge_monkey.png"
+				Url = "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg"   // this one does - today
+				//"http://xamarinuniversity.blob.core.windows.net/ios210/huge_monkey.png"  // this may not exist any more
 			};
 
 			MessagingCenter.Send (message, "Download");

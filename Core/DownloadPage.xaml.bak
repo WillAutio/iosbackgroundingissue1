@@ -13,7 +13,7 @@
 		<StackLayout>
 			<Button Text="Start Internet Download" x:Name="downloadButton" />
 			<Label Text="" x:Name="downloadStatus" FontSize="Large" HorizontalOptions="CenterAndExpand" />
-			<Image x:Name="catImage" Aspect="AspectFill" HeightRequest="350" WidthRequest="150" BackgroundColor ="Blue"/>
+			<Image x:Name="catImage" Aspect="AspectFill" HeightRequest="350" WidthRequest="150" />
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
